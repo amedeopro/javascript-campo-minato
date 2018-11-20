@@ -35,7 +35,7 @@ console.log(array);
 var haiPerso = false;
 
 //chiedo all'utente di inserire un numero se non è presente nell'array vado avanti e conto 1 punto, in caso contrario l'utente ha perso
-for (var i = 0; i <= 2; i++) {
+for (var i = 0; i <= 100 - array.length; i++) {
   var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 100"));
   console.log(numeroUtente);
   if (numeroUtente == array){
