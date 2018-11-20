@@ -32,21 +32,21 @@ for (var i = 0; i < 16; i++) {
 
 console.log(array);
 
-var haiPerso = false;
+var haiVinto = false;
 
 //chiedo all'utente di inserire un numero se non è presente nell'array vado avanti e conto 1 punto, in caso contrario l'utente ha perso
 for (var i = 0; i <= 100 - array.length; i++) {
   var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 100"));
   console.log(numeroUtente);
-  if (numeroUtente == array){
-    haiPerso = true;
+  if (numeroUtente != array){
+    numeroUtente = true;
 
   }
 }
 
-if (haiPerso) {
-  console.log("HAI PERSO");
+if (haiVinto) {
+  console.log("HAI VINTO");
 } else {
-  console.log("HAI VINTO")
+  console.log("HAI PERSO")
 }
 //l'utente potrà inserire un numero max di numeri
