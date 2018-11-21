@@ -38,8 +38,9 @@ var haiVinto = false;
 for (var i = 0; i <= 100 - array.length; i++) {
   var numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 100"));
   console.log(numeroUtente);
-  if (numeroUtente != array){
-    numeroUtente = true;
+  if (numeroUtente != array[i]){
+
+    haiVinto = true;
 
   }
 }
